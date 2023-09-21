@@ -1,5 +1,10 @@
 <script>
+import AppTitle from './components/AppTitle.vue'
+
 export default {
+  components: {
+    AppTitle
+  },
   // questo é il vs options object
   data() {
     return {
@@ -9,10 +14,16 @@ export default {
   methods: {
   }
 }
+
+
 </script>
 
 <template>
+  <!-- with option object in the same app -->
   <h1>{{ message }}</h1>
+
+  <!-- with option object in the other app -->
+  <AppTitle />
 </template>
 
 
